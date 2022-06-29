@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+h3 {
+    color: hsl(0, 0%, 95%);
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+div > h3 {
+    font-size: 2em;
+    font-family: 'Big Shoulders Display', cursive;
+}
+div > p, a {
+    font-size: 12px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.sedans > button > a {
+    color:hsl(31, 77%, 52%);
+}
+.suvs > button > a {
+    color:hsl(184, 100%, 22%);
+}
+.luxury > button > a {
+    color: hsl(179, 100%, 13%);
+}
+button {
+    border-radius: 20px;
+    border: none;
+    background-color:hsl(0, 0%, 95%);
+}
+main {
+    display: flex;
+    box-shadow: 0 0 10px;
+    justify-content: center;
+    background-color: hsl(0, 0%, 95%);
+}
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+.luxury {
+    background-color:hsl(179, 100%, 13%);
+}
+@media screen and (min-width: 901px) and (max-width: 1440px) {
+img {
+    width: 50px;
+    margin-top: 15px;
+}
+button {
+    margin: 15px;
+    width: 150px;
+    height: 50px;
+}
+main {
+    width: 900px;
+    margin: 50px auto;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+}
+.sedans, .suvs, .luxury {
+    height: 400px;
+    margin: auto;
+    justify-content: center;
+    padding: 20px;
+    line-height: 1.8;
+}
+.sedans {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;  
+}
+.luxury {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+}
+@media screen and (min-width: 300px) and (max-width: 900px) {
+    img {
+        width: 50px;
+        margin-top: 15px;
+    }
+    button {
+        margin: 15px;
+        width: 120px;
+        height: 40px;
+    }
+        main {
+        width: 320px;
+        padding: 10px;
+        margin: 20px auto;
+        display: grid;
+        grid-template: 1fr 1fr 1fr;
+    }
+    .sedans, .suvs, .luxury {
+        height: 400px;
+        padding: 20px;
+        line-height: 1.9;
+        width: 280px;
+    }
+    .sedans {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        
+    }
+    .suvs {
+        background-color: hsl(184, 100%, 22%);
+    }
+    .luxury {
+       border-bottom-left-radius: 10px;
+       border-bottom-right-radius: 10px;
+    }
+}
